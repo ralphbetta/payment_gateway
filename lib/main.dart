@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_stripe/flutter_stripe.dart';
+// import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:gpay/.env.keys.dart';
 import 'package:gpay/gpay/pay.dart';
 import 'package:gpay/paypal/Payment.dart';
@@ -10,7 +10,7 @@ import 'package:razorpay_flutter/razorpay_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Stripe.publishableKey = stripePublishableKey;
+  // Stripe.publishableKey = stripePublishableKey;
   runApp(const MyApp());
 }
 
@@ -70,7 +70,7 @@ class _PaywithState extends State<Paywith> {
             hr(),
             ElevatedButton(
                 onPressed: () {
-                  StripeController(context: context).makePayment();
+                  //StripeController(context: context).makePayment();
                 },
                 style: ElevatedButton.styleFrom(primary: Colors.blue),
                 child: const Text("Pay with Stripe")),

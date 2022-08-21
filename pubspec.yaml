@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   pay: ^1.0.8
-  flutter_stripe: ^2.3.0
+  #flutter_stripe: ^2.3.0
   http:
   http_auth: ^1.0.0
 
