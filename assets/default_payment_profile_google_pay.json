@@ -1,0 +1,40 @@
+{
+    "provider": "google_pay",
+    "data": {
+      "environment": "TEST",
+      "apiVersion": 2,
+      "apiVersionMinor": 0,
+      "allowedPaymentMethods": [
+        {
+          "type": "CARD",
+          "tokenizationSpecification": {
+            "type": "PAYMENT_GATEWAY",
+            "parameters": {
+              "gateway": "stripe",
+              "stripe:version": "2020-08-27",
+              "stripe:publishableKey": "<stripe publishable key, eg pk_.......>"
+            }
+          },
+          "parameters": {
+            "allowedCardNetworks": [
+              "VISA",
+              "MASTERCARD"
+            ],
+            "allowedAuthMethods": [
+              "PAN_ONLY",
+              "CRYPTOGRAM_3DS"
+            ],
+            "billingAddressRequired": false
+          }
+        }
+      ],
+      "merchantInfo": {
+        "merchantId": "<Merchant ID from pay.google.com/business>",
+        "merchantName": "<Display Name>"
+      },
+      "transactionInfo": {
+        "countryCode": "FR",
+        "currencyCode": "EUR"
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+{
+    "provider": "apple_pay",
+    "data": {
+      "merchantIdentifier": "<Merchant ID from developer.apple.com>",
+      "displayName": "<Display Name>",
+      "merchantCapabilities": [
+        "3DS",
+        "debit",
+        "credit"
+      ],
+      "supportedNetworks": [
+        "amex",
+        "visa",
+        "discover",
+        "masterCard"
+      ],
+      "countryCode": "FR",
+      "currencyCode": "EUR", 
+      "requiredBillingContactFields": null, 
+      "requiredShippingContactFields": null
+    }
+  }
