@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:gpay/.env.keys.dart';
 import 'package:gpay/gpay/pay.dart';
 import 'package:gpay/paypal/Payment.dart';
 import 'package:gpay/razorpay/services.dart';
@@ -9,8 +10,7 @@ import 'package:razorpay_flutter/razorpay_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Stripe.publishableKey =
-      "pk_test_51LXobUGYYiOGq11cFXnTVF4c9jzIhbvtvLKIEzb14p3ZYBKgkLObQMa61LYG9LVjleuQrWykvq3ASnqNq6p7nSH600AXynakDw";
+  Stripe.publishableKey = stripePublishableKey;
   runApp(const MyApp());
 }
 
